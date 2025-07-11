@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="icon" type="png" href="img/mdi_sofa.png">
+    <link rel="stylesheet" href="divan.css">
+    <meta charset="utf-8" />
+    <script src="https://kit.fontawesome.com/3929e16ef5.js" crossorigin="anonymous"></script>
+    <script src="{% static 'network/functions.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>MEBEL PRO</title>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="pre-header">
+        <header>
+            <div class="wrap">
+                <a style="margin-top: 5px;" href="index.html">
+                    <img class="header-icon" src="img/logo.svg" alt="MEBEL PRO">
+                </a>
+                <div class="panel">
+                    <a href="index.html">
+                        в тренде
+                    </a>
+                    <a style="text-decoration: underline black; color: black;" href="divan.html">
+                        Диваны
+                    </a>
+                    <a href="">
+                        Столы
+                    </a>
+                    <a href="">
+                        Стулья
+                    </a>
+                    <a href="">
+                        Кровати
+                    </a>
+                    <a href="">
+                        Уличная мебель
+                    </a>
+                    <a href="">
+                        Хранение
+                    </a>
+                </div>
+                <div class="header-end">
+                    <a href=""><img src="img/Vector.svg" alt=""></a>
+                    <a href=""><img src="img/Profile 1=Default.svg" alt=""></a>
+                    <a href="favorite.html"><img style="transform: scale(1.4);" src="img/favorite.svg" alt=""></a>
+                    <a href=""><img src="img/Property 1=Default.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="flyer" style="display: flex;align-items: center;color: rgba(50, 52, 51, 0.5);">
+                <p style="position: relative;margin-top:8px ;margin-bottom: 0px; left: 5%;"><a
+                        href="index.html">Главная</a><img src="img/fluent_ios-arrow-24-filled.png" alt="">
+                    <a href="divan.html">Диваны</a><img src="img/fluent_ios-arrow-24-filled.png" alt="">
+                    <a href="divan.html">Все диваны</a>
+                </p>
+            </div>
+        </header>
+    </div>
+    <!-- сайт -->
+    <div class="content">
+        <div class="welcome">
+            <div class="background-for-welcome">
+                <img style="width: 100%;opacity: 0.6;object-fit: cover;" src="img/aa99c707121989c1076b662761a0c157.jpg"
+                    alt="">
+                <div class="welcome-content">
+                    <h2> Диваны</h2>
+                    <p style="text-align: center;width: 50%;">У нас вы найдете идеальные диваны для любого интерьера:
+                        от компактных 2-местных моделей до просторных угловых вариантов.
+                        Мягкие, как облако, или умеренно жесткие — выбирайте комфорт на каждый день!</p>
+                </div>
+            </div>
+        </div>
+        <div style="display: block;flex-direction: row;">
+
+            <div class="filter-menu">
+                <nav class="filter-menu-list">
+                    <label for="light-switch" class="gui-switch"
+                        style="border-top:1px solid rgba(193, 175, 134, 0.8);margin-bottom:10px ;width: 75%;padding-top: 5px;padding-bottom: 5px;">
+                        В наличии доставка 3-5 дней
+                        <input type="checkbox" role="switch" id="light-switch">
+                    </label>
+                    <div
+                        style="display: flex;flex-direction: row;border-top: 1px solid rgba(193, 175, 134, 0.8); border-bottom: 1px solid rgba(193, 175, 134, 0.8);align-items: center;justify-content: center;width: 75%;margin-bottom: 10px;padding-top: 5px;padding-bottom: 5px;">
+                        <button class="filter-menu-list-btn" style="">
+                            <img class="filter-arrow" src="img/ep_arrow-up-bold.png" alt="">
+                            Порядок
+                        </button>
+                        <div class="">
+                            <label for="light-switch" class="gui-switch" style="">
+                                справо на лево
+                                <input type="checkbox" role="switch">
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+            <div class="main">
+                <div class="main-mebel-filter">
+
+                    <div style="display: flex; width: 100%;padding-left: 5%;padding-right: 5%;">
+                        <div style="display: flex; width: 100%;justify-content: space-between;flex-wrap: nowrap;">
+                            <div style="display: flex;align-items: center;">
+                                <button class="filter"><img style="width: 25px;height: 25px;" src="img/filter 1.png"
+                                        alt="">Показать фильтры</button>
+                            </div>
+                            <div style="display: flex;flex-wrap: nowrap;">
+                                <p style="color: rgba(50, 52, 51, 1);">Сортировать по:</p>
+                                <select name="sort by" id="sort">
+                                    <option value="recomend1">Рекомендации</option>
+                                    <option value="recomend2">Рекомендации</option>
+                                    <option value="recomend3">Рекомендации</option>
+                                    <option value="recomend4">Рекомендации</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-mebel">
+
+                    <div id="1" class="main-mebel-content">
+                        <div style="display: flex;flex-direction: column;">
+                            <div class="image-container">
+                                <a id="img1" href="divan-krovat.html">
+                                </a>
+
+                            </div>
+                            <div style="display: flex;justify-content: center;margin-bottom: 10px;">
+                                <div style="display: flex;flex-direction: column;">
+                                    <h4 style="margin-bottom: 0px;">Диван-кровать Скаген бежевого цвета</h4>
+                                    <p>Артикул: IMR-1798647</p>
+                                    <p>25 000 <img style="width: 14px;height: 14px;" src="img/carbon_currency-ruble.svg"
+                                            alt="">
+                                    </p>
+                                    <p style="display: flex;flex-wrap: nowrap;justify-content: left;">Размеры:
+                                        80x200 см
+                                        90x300 см
+                                        90x300 см
+                                    </p>
+                                    <p>
+                                        Материал: велюр шенилл гобелен рогожка
+                                    </p>
+                                    <div
+                                        style="display: flex; flex-wrap: wrap; justify-content: space-between;width: 50%;align-items: center;">
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(214, 197, 182, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(164, 91, 56, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(91, 123, 159, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(68, 68, 68, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        +5
+                                    </div>
+                                    <div style="display: flex;margin-top: 15px;">
+                                        <button class="button-small">
+                                            <p style="color: rgba(193, 162, 134, 1);">В корзину</p>
+                                            <div style="display: flex;align-items: center;">
+                                                <img style="width: 30px; height: 10px;filter: invert(1);"
+                                                    src="img/Arrow 2.png" alt="">
+                                            </div>
+                                        </button>
+                                        <div class="icons">
+                                            <i id="heart1" class="far fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="2" class="main-mebel-content">
+                        <div style="display: flex;flex-direction: column;">
+                            <div class="image-container">
+                                <a id="img2" href="divan-krovat.html">
+                                </a>
+
+                            </div>
+                            <div style="display: flex;justify-content: center;margin-bottom: 10px;">
+                                <div style="display: flex;flex-direction: column;">
+                                    <h4 style="margin-bottom: 0px;">Диван-кровать Скаген бежевого цвета</h4>
+                                    <p>Артикул: IMR-1798647</p>
+                                    <p>25 000 <img style="width: 14px;height: 14px;" src="img/carbon_currency-ruble.svg"
+                                            alt="">
+                                    </p>
+                                    <p style="display: flex;flex-wrap: nowrap;justify-content: left;">Размеры:
+                                        80x200 см
+                                        90x300 см
+                                        90x300 см
+                                    </p>
+                                    <p>
+                                        Материал: велюр шенилл гобелен рогожка
+                                    </p>
+                                    <div
+                                        style="display: flex; flex-wrap: wrap; justify-content: space-between;width: 50%;align-items: center;">
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(214, 197, 182, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(164, 91, 56, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(91, 123, 159, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(68, 68, 68, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        +5
+                                    </div>
+                                    <div style="display: flex;margin-top: 15px;">
+                                        <button class="button-small">
+                                            <p style="color: rgba(193, 162, 134, 1);">В корзину</p>
+                                            <div style="display: flex;align-items: center;">
+                                                <img style="width: 30px; height: 10px;filter: invert(1);"
+                                                    src="img/Arrow 2.png" alt="">
+                                            </div>
+                                        </button>
+                                        <div class="icons">
+                                            <i id="heart2" class="far fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="3" class="main-mebel-content">
+                        <div style="display: flex;flex-direction: column;">
+                            <div class="image-container">
+                                <a id="img3" href="divan-krovat.html">
+                                </a>
+
+                            </div>
+                            <div style="display: flex;justify-content: center;margin-bottom: 10px;">
+                                <div style="display: flex;flex-direction: column;">
+                                    <h4 style="margin-bottom: 0px;">Диван-кровать Скаген бежевого цвета</h4>
+                                    <p>Артикул: IMR-1798647</p>
+                                    <p>25 000 <img style="width: 14px;height: 14px;" src="img/carbon_currency-ruble.svg"
+                                            alt="">
+                                    </p>
+                                    <p style="display: flex;flex-wrap: nowrap;justify-content: left;">Размеры:
+                                        80x200 см
+                                        90x300 см
+                                        90x300 см
+                                    </p>
+                                    <p>
+                                        Материал: велюр шенилл гобелен рогожка
+                                    </p>
+                                    <div
+                                        style="display: flex; flex-wrap: wrap; justify-content: space-between;width: 50%;align-items: center;">
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(214, 197, 182, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(164, 91, 56, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(91, 123, 159, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(68, 68, 68, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        +5
+                                    </div>
+                                    <div style="display: flex;margin-top: 15px;">
+                                        <button class="button-small">
+                                            <p style="color: rgba(193, 162, 134, 1);">В корзину</p>
+                                            <div style="display: flex;align-items: center;">
+                                                <img style="width: 30px; height: 10px;filter: invert(1);"
+                                                    src="img/Arrow 2.png" alt="">
+                                            </div>
+                                        </button>
+                                        <div class="icons">
+                                            <i id="heart3" class="far fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="4" class="main-mebel-content">
+                        <div style="display: flex;flex-direction: column;">
+                            <div class="image-container">
+                                <a id="img4" href="divan-krovat.html">
+                                </a>
+
+                            </div>
+                            <div style="display: flex;justify-content: center;margin-bottom: 10px;">
+                                <div style="display: flex;flex-direction: column;">
+                                    <h4 style="margin-bottom: 0px;">Диван-кровать Скаген бежевого цвета</h4>
+                                    <p>Артикул: IMR-1798647</p>
+                                    <p>25 000 <img style="width: 14px;height: 14px;" src="img/carbon_currency-ruble.svg"
+                                            alt="">
+                                    </p>
+                                    <p style="display: flex;flex-wrap: nowrap;justify-content: left;">Размеры:
+                                        80x200 см
+                                        90x300 см
+                                        90x300 см
+                                    </p>
+                                    <p>
+                                        Материал: велюр шенилл гобелен рогожка
+                                    </p>
+                                    <div
+                                        style="display: flex; flex-wrap: wrap; justify-content: space-between;width: 50%;align-items: center;">
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(214, 197, 182, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(164, 91, 56, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(91, 123, 159, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(68, 68, 68, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        +5
+                                    </div>
+                                    <div style="display: flex;margin-top: 15px;">
+                                        <button class="button-small">
+                                            <p style="color: rgba(193, 162, 134, 1);">В корзину</p>
+                                            <div style="display: flex;align-items: center;">
+                                                <img style="width: 30px; height: 10px;filter: invert(1);"
+                                                    src="img/Arrow 2.png" alt="">
+                                            </div>
+                                        </button>
+                                        <div class="icons">
+                                            <i id="heart4" class="far fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="5" class="main-mebel-content">
+                        <div style="display: flex;flex-direction: column;">
+                            <div class="image-container">
+                                <a id="img5" href="divan-krovat.html">
+                                </a>
+
+                            </div>
+                            <div style="display: flex;justify-content: center;margin-bottom: 10px;">
+                                <div style="display: flex;flex-direction: column;">
+                                    <h4 style="margin-bottom: 0px;">Диван-кровать Скаген бежевого цвета</h4>
+                                    <p>Артикул: IMR-1798647</p>
+                                    <p>25 000 <img style="width: 14px;height: 14px;" src="img/carbon_currency-ruble.svg"
+                                            alt="">
+                                    </p>
+                                    <p style="display: flex;flex-wrap: nowrap;justify-content: left;">Размеры:
+                                        80x200 см
+                                        90x300 см
+                                        90x300 см
+                                    </p>
+                                    <p>
+                                        Материал: велюр шенилл гобелен рогожка
+                                    </p>
+                                    <div
+                                        style="display: flex; flex-wrap: wrap; justify-content: space-between;width: 50%;align-items: center;">
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(214, 197, 182, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(164, 91, 56, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(91, 123, 159, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(68, 68, 68, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        +5
+                                    </div>
+                                    <div style="display: flex;margin-top: 15px;">
+                                        <button class="button-small">
+                                            <p style="color: rgba(193, 162, 134, 1);">В корзину</p>
+                                            <div style="display: flex;align-items: center;">
+                                                <img style="width: 30px; height: 10px;filter: invert(1);"
+                                                    src="img/Arrow 2.png" alt="">
+                                            </div>
+                                        </button>
+                                        <div class="icons">
+                                            <i id="heart5" class="far fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="6" class="main-mebel-content">
+                        <div style="display: flex;flex-direction: column;">
+                            <div class="image-container">
+                                <a id="img6" href="divan-krovat.html">
+                                </a>
+
+                            </div>
+                            <div style="display: flex;justify-content: center;margin-bottom: 10px;">
+                                <div style="display: flex;flex-direction: column;">
+                                    <h4 style="margin-bottom: 0px;">Диван-кровать Скаген бежевого цвета</h4>
+                                    <p>Артикул: IMR-1798647</p>
+                                    <p>25 000 <img style="width: 14px;height: 14px;" src="img/carbon_currency-ruble.svg"
+                                            alt="">
+                                    </p>
+                                    <p style="display: flex;flex-wrap: nowrap;justify-content: left;">Размеры:
+                                        80x200 см
+                                        90x300 см
+                                        90x300 см
+                                    </p>
+                                    <p>
+                                        Материал: велюр шенилл гобелен рогожка
+                                    </p>
+                                    <div
+                                        style="display: flex; flex-wrap: wrap; justify-content: space-between;width: 50%;align-items: center;">
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(214, 197, 182, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(164, 91, 56, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(91, 123, 159, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(68, 68, 68, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        +5
+                                    </div>
+                                    <div style="display: flex;margin-top: 15px;">
+                                        <button class="button-small">
+                                            <p style="color: rgba(193, 162, 134, 1);">В корзину</p>
+                                            <div style="display: flex;align-items: center;">
+                                                <img style="width: 30px; height: 10px;filter: invert(1);"
+                                                    src="img/Arrow 2.png" alt="">
+                                            </div>
+                                        </button>
+                                        <div class="icons">
+                                            <i id="heart6" class="far fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="7" class="main-mebel-content">
+                        <div style="display: flex;flex-direction: column;">
+                            <div class="image-container">
+                                <a id="img7" href="divan-krovat.html">
+                                </a>
+
+                            </div>
+                            <div style="display: flex;justify-content: center;margin-bottom: 10px;">
+                                <div style="display: flex;flex-direction: column;">
+                                    <h4 style="margin-bottom: 0px;">Диван-кровать Скаген бежевого цвета</h4>
+                                    <p>Артикул: IMR-1798647</p>
+                                    <p>25 000 <img style="width: 14px;height: 14px;" src="img/carbon_currency-ruble.svg"
+                                            alt="">
+                                    </p>
+                                    <p style="display: flex;flex-wrap: nowrap;justify-content: left;">Размеры:
+                                        80x200 см
+                                        90x300 см
+                                        90x300 см
+                                    </p>
+                                    <p>
+                                        Материал: велюр шенилл гобелен рогожка
+                                    </p>
+                                    <div
+                                        style="display: flex; flex-wrap: wrap; justify-content: space-between;width: 50%;align-items: center;">
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(214, 197, 182, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(164, 91, 56, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(91, 123, 159, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(68, 68, 68, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        +5
+                                    </div>
+                                    <div style="display: flex;margin-top: 15px;">
+                                        <button class="button-small">
+                                            <p style="color: rgba(193, 162, 134, 1);">В корзину</p>
+                                            <div style="display: flex;align-items: center;">
+                                                <img style="width: 30px; height: 10px;filter: invert(1);"
+                                                    src="img/Arrow 2.png" alt="">
+                                            </div>
+                                        </button>
+                                        <div class="icons">
+                                            <i id="heart7" class="far fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="8" class="main-mebel-content">
+                        <div style="display: flex;flex-direction: column;">
+                            <div class="image-container">
+                                <a id="img8" href="divan-krovat.html">
+                                </a>
+
+                            </div>
+                            <div style="display: flex;justify-content: center;margin-bottom: 10px;">
+                                <div style="display: flex;flex-direction: column;">
+                                    <h4 style="margin-bottom: 0px;">Диван-кровать Скаген бежевого цвета</h4>
+                                    <p>Артикул: IMR-1798647</p>
+                                    <p>25 000 <img style="width: 14px;height: 14px;" src="img/carbon_currency-ruble.svg"
+                                            alt="">
+                                    </p>
+                                    <p style="display: flex;flex-wrap: nowrap;justify-content: left;">Размеры:
+                                        80x200 см
+                                        90x300 см
+                                        90x300 см
+                                    </p>
+                                    <p>
+                                        Материал: велюр шенилл гобелен рогожка
+                                    </p>
+                                    <div
+                                        style="display: flex; flex-wrap: wrap; justify-content: space-between;width: 50%;align-items: center;">
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(214, 197, 182, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(164, 91, 56, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(91, 123, 159, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(68, 68, 68, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        +5
+                                    </div>
+                                    <div style="display: flex;margin-top: 15px;">
+                                        <button class="button-small">
+                                            <p style="color: rgba(193, 162, 134, 1);">В корзину</p>
+                                            <div style="display: flex;align-items: center;">
+                                                <img style="width: 30px; height: 10px;filter: invert(1);"
+                                                    src="img/Arrow 2.png" alt="">
+                                            </div>
+                                        </button>
+                                        <div class="icons">
+                                            <i id="heart8" class="far fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="9" class="main-mebel-content">
+                        <div style="display: flex;flex-direction: column;">
+                            <div class="image-container">
+                                <a id="img9" href="divan-krovat.html">
+                                </a>
+
+                            </div>
+                            <div style="display: flex;justify-content: center;margin-bottom: 10px;">
+                                <div style="display: flex;flex-direction: column;">
+                                    <h4 style="margin-bottom: 0px;">Диван-кровать Скаген бежевого цвета</h4>
+                                    <p>Артикул: IMR-1798647</p>
+                                    <p>25 000 <img style="width: 14px;height: 14px;" src="img/carbon_currency-ruble.svg"
+                                            alt="">
+                                    </p>
+                                    <p style="display: flex;flex-wrap: nowrap;justify-content: left;">Размеры:
+                                        80x200 см
+                                        90x300 см
+                                        90x300 см
+                                    </p>
+                                    <p>
+                                        Материал: велюр шенилл гобелен рогожка
+                                    </p>
+                                    <div
+                                        style="display: flex; flex-wrap: wrap; justify-content: space-between;width: 50%;align-items: center;">
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(214, 197, 182, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(164, 91, 56, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(91, 123, 159, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        <div
+                                            style="width: 25px; height: 25px; background-color: rgba(68, 68, 68, 1); border: 1px solid rgba(50, 52, 51, 1); border-radius: 50%;">
+                                        </div>
+                                        +5
+                                    </div>
+                                    <div style="display: flex;margin-top: 15px;">
+                                        <button class="button-small">
+                                            <p style="color: rgba(193, 162, 134, 1);">В корзину</p>
+                                            <div style="display: flex;align-items: center;">
+                                                <img style="width: 30px; height: 10px;filter: invert(1);"
+                                                    src="img/Arrow 2.png" alt="">
+                                            </div>
+                                        </button>
+                                        <div class="icons">
+                                            <i id="heart9" class="far fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex;width: 100%;justify-content: center;">
+                    <nav>
+                        <ul id="pagination" class="pagination pagination-lg">
+                            <!-- Кнопки будут вставлены динамически с помощью jQuery -->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <div class="footer-conteiner">
+            <div class="footer-content">
+                <div style="display: flex;flex-direction: column; height: 100%;justify-content: space-evenly;">
+                    <a href=""><img style="filter: invert(1);" src="img/logo.svg" alt=""></a>
+                    <a href="index.html">В тренде</a>
+                    <a href="divan.html">Диваны</a>
+                    <a href="">Столы</a>
+                    <a href="">Стулья</a>
+                    <a href="">Кровати</a>
+                    <a href="">Хранение</a>
+                </div>
+                <div style="display: flex;flex-direction: column;height: 50%;;justify-content: space-evenly;">
+                    <h3 style="margin-bottom: 0px;">Доставка и оплата</h3>
+                    <a href="">Доставка</a>
+                    <a href="">Варианты оплаты</a>
+                </div>
+                <div style="display: flex;flex-direction: column; height: 100%;">
+                    <h3 style="margin-bottom: 2px;">Контакты</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8); margin-top: 2px ;margin-bottom: 2px;">9 87353
+                        3435
+                    </p>
+                    <a href="">gmail@gmail.com</a>
+                    <h3>Отдел продаж с 9.00 до 20.00</h3>
+                </div>
+                <div style="display: flex;flex-direction: column;height: 100%;">
+                    <h3 style="margin-bottom: 0px;">Подпишитесь на нас</h3>
+                    <div style="display: flex;flex-direction: column;">
+                        <p style="color: rgba(255, 255, 255, 1);margin-top: 2px;">Мы в социальных сетях</p>
+                        <div style="display: flex;flex-wrap: nowrap;">
+                            <a href=""><img style="width: 24px;height: 24px;" src="img/mdi_youtube.png" alt=""></a>
+                            <a href=""><img style="width: 24px;height: 24px;" src="img/basil_vk-solid.png" alt=""></a>
+                            <a href=""><img style="width: 24px;height: 24px;" src="img/ri_instagram-fill.png"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                    <h3 style="margin-bottom: 2px;">Платежные системы</h3>
+                    <div style="display: flex;flex-wrap: nowrap; justify-content: space-around;align-items: center;">
+                        <img style="width: 40px;height: 12px;" src="img/visa_payment_method_card_icon_142746.png"
+                            alt="">
+                        <img style="width: 40px;height: 12px;" src="img/Mir-01.png" alt="">
+                        <img style="width: 40px;height: 25px;" src="img/mastercard_old_payment_method_icon_142751.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="end-footer">
+                <div>
+                    <p style="color: rgba(255, 255, 255, 0.8);">©2025 Goratz. Все права защищены</p>
+                </div>
+                <div style="display: flex;flex-wrap:nowrap;">
+                    <p>
+                        <a style="border-right: 1px solid #fff;padding-right: 4px;" href="">Terms of use</a>
+                        <a style="border-right: 1px solid #fff;padding-right: 4px;" href="">Privacy Policy</a>
+                        <a href="">Cookie Settings</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        $('.filter').on('click', function (e) {
+            e.preventDefault();
+            $('.filter-menu').toggleClass('filter-menu_active');
+            $('.main-mebel').toggleClass('main-active');
+        })
+        $('.filter-arrow').on('click', function (e) {
+            $('.filter-arrow').toggleClass('filter-arrow-active');
+
+        })
+        $(document).ready(function () {
+            // Смена изображения при наведении
+            $('#1').hover(
+                function () { // Наведение мыши
+                    $(this).css({
+                        'border': '1px solid rgba(159, 125, 91, 1)'
+
+                    });
+                    $('#img1').fadeOut(200, function () { // Исчезновение текущей картинки
+                        $('#img1').css({
+                            'background-image': 'url("img/aa99c707121989c1076b662761a0c157.jpg")',
+                            'width': '100%',
+                            'height': '320px',
+                            'justify-content': 'left',
+                        });
+                        $('#img1').fadeIn(200); // Появление новой картинки
+                    });
+
+                    $('.favorite-button').addClass('visible'); // Показываем кнопку
+                },
+                function () { // Уход мыши
+                    $(this).css({
+                        'border': 'none'
+                    });
+                    $('#img1').fadeOut(200, function () { // Исчезновение текущей картинки
+                        $('#img1').css({
+                            'background-image': 'url("img/Rectangle 20.png")',
+                            'width': '100%',
+                            'height': '130px',
+                            'justify-content': 'center',
+                        });
+                        $('#img1').fadeIn(200); // Появление исходной картинки
+                    });
+
+                    $('.favorite-button').removeClass('visible'); // Скрываем кнопку
+                }
+            );
+        });
+        $(document).ready(function () {
+            // Смена изображения при наведении
+            $('#2').hover(
+                function () { // Наведение мыши
+                    $(this).css({
+                        'border': '1px solid rgba(159, 125, 91, 1)'
+
+                    });
+                    $('#img2').fadeOut(200, function () { // Исчезновение текущей картинки
+                        $('#img2').css({
+                            'background-image': 'url("img/aa99c707121989c1076b662761a0c157.jpg")',
+                            'width': '100%',
+                            'height': '320px',
+                            'justify-content': 'left',
+                        });
+                        $('#img2').fadeIn(200); // Появление новой картинки
+                    });
+
+                    $('.favorite-button').addClass('visible'); // Показываем кнопку
+                },
+                function () { // Уход мыши
+                    $(this).css({
+                        'border': 'none'
+                    });
+                    $('#img2').fadeOut(200, function () { // Исчезновение текущей картинки
+                        $('#img2').css({
+                            'background-image': 'url("img/Rectangle 20.png")',
+                            'width': '100%',
+                            'height': '130px',
+                            'justify-content': 'center',
+                        });
+                        $('#img2').fadeIn(200); // Появление исходной картинки
+                    });
+
+                    $('.favorite-button').removeClass('visible'); // Скрываем кнопку
+                }
+            );
+        });
+        $(document).ready(function () {
+            // Смена изображения при наведении
+            $('#3').hover(
+                function () { // Наведение мыши
+                    $(this).css({
+                        'border': '1px solid rgba(159, 125, 91, 1)'
+
+                    });
+                    $('#img3').fadeOut(200, function () { // Исчезновение текущей картинки
+                        $('#img3').css({
+                            'background-image': 'url("img/aa99c707121989c1076b662761a0c157.jpg")',
+                            'width': '100%',
+                            'height': '320px',
+                            'justify-content': 'left',
+                        });
+                        $('#img3').fadeIn(200); // Появление новой картинки
+                    });
+
+                    $('.favorite-button').addClass('visible'); // Показываем кнопку
+                },
+                function () { // Уход мыши
+                    $(this).css({
+                        'border': 'none'
+                    });
+                    $('#img3').fadeOut(200, function () { // Исчезновение текущей картинки
+                        $('#img3').css({
+                            'background-image': 'url("img/Rectangle 20.png")',
+                            'width': '100%',
+                            'height': '130px',
+                            'justify-content': 'center',
+                        });
+                        $('#img3').fadeIn(200); // Появление исходной картинки
+                    });
+
+                    $('.favorite-button').removeClass('visible'); // Скрываем кнопку
+                }
+            );
+        });
+        $(document).ready(function () {
+            // Смена изображения при наведении
+            $('#4').hover(
+                function () { // Наведение мыши
+                    $(this).css({
+                        'border': '1px solid rgba(159, 125, 91, 1)'
+
+                    });
+                    $('#img4').fadeOut(200, function () { // Исчезновение текущей картинки
+                        $('#img4').css({
+                            'background-image': 'url("img/aa99c707121989c1076b662761a0c157.jpg")',
+                            'width': '100%',
+                            'height': '320px',
+                            'justify-content': 'left',
+                        });
+                        $('#img4').fadeIn(200); // Появление новой картинки
+                    });
+
+                    $('.favorite-button').addClass('visible'); // Показываем кнопку
+                },
+                function () { // Уход мыши
+                    $(this).css({
+                        'border': 'none'
+                    });
+                    $('#img4').fadeOut(200, function () { // Исчезновение текущей картинки
+                        $('#img4').css({
+                            'background-image': 'url("img/Rectangle 20.png")',
+                            'width': '100%',
+                            'height': '130px',
+                            'justify-content': 'center',
+                        });
+                        $('#img4').fadeIn(200); // Появление исходной картинки
+                    });
+
+                    $('.favorite-button').removeClass('visible'); // Скрываем кнопку
+                }
+            );
+        });
+        $(document).ready(function () {
+            // Смена изображения при наведении
+            $('#5').hover(
+                function () { // Наведение мыши
+                    $(this).css({
+                        'border': '1px solid rgba(159, 125, 91, 1)'
+
+                    });
+                    $('#img5').fadeOut(200, function () { // Исчезновение текущей картинки
+                        $('#img5').css({
+                            'background-image': 'url("img/aa99c707121989c1076b662761a0c157.jpg")',
+                            'width': '100%',
+                            'height': '320px',
+                            'justify-content': 'left',
+                        });
+                        $('#img5').fadeIn(200); // Появление новой картинки
+                    });
+
+                    $('.favorite-button').addClass('visible'); // Показываем кнопку
+                },
+                function () { // Уход мыши
+                    $(this).css({
+                        'border': 'none'
+                    });
+                    $('#img5').fadeOut(200, function () { // Исчезновение текущей картинки
+                        $('#img5').css({
+                            'background-image': 'url("img/Rectangle 20.png")',
+                            'width': '100%',
+                            'height': '130px',
+                            'justify-content': 'center',
+                        });
+                        $('#img5').fadeIn(200); // Появление исходной картинки
+                    });
+
+                    $('.favorite-button').removeClass('visible'); // Скрываем кнопку
+                }
+            );
+        });
+        $(document).ready(function () {
+            // Смена изображения при наведении
+            $('#6').hover(
+                function () { // Наведение мыши
+                    $(this).css({
+                        'border': '1px solid rgba(159, 125, 91, 1)'
+
+                    });
+                    $('#img6').fadeOut(200, function () { // Исчезновение текущей картинки
+                        $('#img6').css({
+                            'background-image': 'url("img/aa99c707121989c1076b662761a0c157.jpg")',
+                            'width': '100%',
+                            'height': '320px',
+                            'justify-content': 'left',
+                        });
+                        $('#img6').fadeIn(200); // Появление новой картинки
+                    });
+
+                    $('.favorite-button').addClass('visible'); // Показываем кнопку
+                },
+                function () { // Уход мыши
+                    $(this).css({
+                        'border': 'none'
+                    });
+                    $('#img6').fadeOut(200, function () { // Исчезновение текущей картинки
+                        $('#img6').css({
+                            'background-image': 'url("img/Rectangle 20.png")',
+                            'width': '100%',
+                            'height': '130px',
+                            'justify-content': 'center',
+                        });
+                        $('#img6').fadeIn(200); // Появление исходной картинки
+                    });
+
+                    $('.favorite-button').removeClass('visible'); // Скрываем кнопку
+                }
+            );
+        });
+        $(document).ready(function () {
+            // Смена изображения при наведении
+            $('#7').hover(
+                function () { // Наведение мыши
+                    $(this).css({
+                        'border': '1px solid rgba(159, 125, 91, 1)'
+
+                    });
+                    $('#img7').fadeOut(200, function () { // Исчезновение текущей картинки
+                        $('#img7').css({
+                            'background-image': 'url("img/aa99c707121989c1076b662761a0c157.jpg")',
+                            'width': '100%',
+                            'height': '320px',
+                            'justify-content': 'left',
+                        });
+                        $('#img7').fadeIn(200); // Появление новой картинки
+                    });
+
+                    $('.favorite-button').addClass('visible'); // Показываем кнопку
+                },
+                function () { // Уход мыши
+                    $(this).css({
+                        'border': 'none'
+                    });
+                    $('#img7').fadeOut(200, function () { // Исчезновение текущей картинки
+                        $('#img7').css({
+                            'background-image': 'url("img/Rectangle 20.png")',
+                            'width': '100%',
+                            'height': '130px',
+                            'justify-content': 'center',
+                        });
+                        $('#img7').fadeIn(200); // Появление исходной картинки
+                    });
+
+                    $('.favorite-button').removeClass('visible'); // Скрываем кнопку
+                }
+            );
+        });
+        $(document).ready(function () {
+            // Смена изображения при наведении
+            $('#8').hover(
+                function () { // Наведение мыши
+                    $(this).css({
+                        'border': '1px solid rgba(159, 125, 91, 1)'
+
+                    });
+                    $('#img8').fadeOut(200, function () { // Исчезновение текущей картинки
+                        $('#img8').css({
+                            'background-image': 'url("img/aa99c707121989c1076b662761a0c157.jpg")',
+                            'width': '100%',
+                            'height': '320px',
+                            'justify-content': 'left',
+                        });
+                        $('#img8').fadeIn(200); // Появление новой картинки
+                    });
+
+                    $('.favorite-button').addClass('visible'); // Показываем кнопку
+                },
+                function () { // Уход мыши
+                    $(this).css({
+                        'border': 'none'
+                    });
+                    $('#img8').fadeOut(200, function () { // Исчезновение текущей картинки
+                        $('#img8').css({
+                            'background-image': 'url("img/Rectangle 20.png")',
+                            'width': '100%',
+                            'height': '130px',
+                            'justify-content': 'center',
+                        });
+                        $('#img8').fadeIn(200); // Появление исходной картинки
+                    });
+
+                    $('.favorite-button').removeClass('visible'); // Скрываем кнопку
+                }
+            );
+        });
+        $(document).ready(function () {
+            // Смена изображения при наведении
+            $('#9').hover(
+                function () { // Наведение мыши
+                    $(this).css({
+                        'border': '1px solid rgba(159, 125, 91, 1)'
+
+                    });
+                    $('#img9').fadeOut(200, function () { // Исчезновение текущей картинки
+                        $('#img9').css({
+                            'background-image': 'url("img/aa99c707121989c1076b662761a0c157.jpg")',
+                            'width': '100%',
+                            'height': '320px',
+                            'justify-content': 'left',
+                        });
+                        $('#img9').fadeIn(200); // Появление новой картинки
+                    });
+
+                    $('.favorite-button').addClass('visible'); // Показываем кнопку
+                },
+                function () { // Уход мыши
+                    $(this).css({
+                        'border': 'none'
+                    });
+                    $('#img9').fadeOut(200, function () { // Исчезновение текущей картинки
+                        $('#img9').css({
+                            'background-image': 'url("img/Rectangle 20.png")',
+                            'width': '100%',
+                            'height': '130px',
+                            'justify-content': 'center',
+                        });
+                        $('#img9').fadeIn(200); // Появление исходной картинки
+                    });
+
+                    $('.favorite-button').removeClass('visible'); // Скрываем кнопку
+                }
+            );
+        });
+        $(document).ready(function () {
+            $("#heart1").click(function () {
+                $(this).toggleClass('fas fa-heart');
+                $(this).toggleClass('far fa-heart');
+            });
+        });
+        $(document).ready(function () {
+            $("#heart2").click(function () {
+                $(this).toggleClass('fas fa-heart');
+                $(this).toggleClass('far fa-heart');
+            });
+        });
+        $(document).ready(function () {
+            $("#heart3").click(function () {
+                $(this).toggleClass('fas fa-heart');
+                $(this).toggleClass('far fa-heart');
+            });
+        });
+        $(document).ready(function () {
+            $("#heart4").click(function () {
+                $(this).toggleClass('fas fa-heart');
+                $(this).toggleClass('far fa-heart');
+            });
+        });
+        $(document).ready(function () {
+            $("#heart5").click(function () {
+                $(this).toggleClass('fas fa-heart');
+                $(this).toggleClass('far fa-heart');
+            });
+        });
+        $(document).ready(function () {
+            $("#heart6").click(function () {
+                $(this).toggleClass('fas fa-heart');
+                $(this).toggleClass('far fa-heart');
+            });
+        });
+        $(document).ready(function () {
+            $("#heart7").click(function () {
+                $(this).toggleClass('fas fa-heart');
+                $(this).toggleClass('far fa-heart');
+            });
+        });
+        $(document).ready(function () {
+            $("#heart8").click(function () {
+                $(this).toggleClass('fas fa-heart');
+                $(this).toggleClass('far fa-heart');
+            });
+        });
+        $(document).ready(function () {
+            $("#heart9").click(function () {
+                $(this).toggleClass('fas fa-heart');
+                $(this).toggleClass('far fa-heart');
+            });
+        });
+        $(document).ready(function () {
+            var currentPage = 1; // Текущая активная страница
+            var totalPages = 10; // Всего страниц (пример значения)
+
+            function renderPagination() {
+                $('#pagination').empty(); // очищаем список кнопок
+
+                // Создаем элементы для предыдущей страницы ("Назад")
+                if (currentPage > 1) {
+                    $('#pagination').append('<li class="page-item"><a class="page-link" href="#">Назад</a></li>');
+                }
+
+                // Генерируем нумерованные кнопки страниц
+                for (var i = 1; i <= totalPages; i++) {
+                    var isActive = (i === currentPage) ? 'active' : '';
+                    $('#pagination').append(
+                        '<li class="page-item ' + isActive + '" data-page="' + i + '">' +
+                        '<a class="page-link" href="#">' + i + '</a>' +
+                        '</li>'
+                    );
+                }
+
+                // Создаем элементы для следующей страницы ("Вперед")
+                if (currentPage < totalPages) {
+                    $('#pagination').append('<li class="page-item"><a class="page-link" href="#">Вперед</a></li>');
+                }
+            }
+
+            // Обработчик кликов по пунктам пагинации
+            $(document).on('click', '.page-item a', function (e) {
+                e.preventDefault();
+                var clickedPage = $(this).parent().data('page'); // Получаем выбранную страницу
+                if ($(this).text() === 'Назад') {
+                    currentPage--;
+                } else if ($(this).text() === 'Вперед') {
+                    currentPage++;
+                } else {
+                    currentPage = clickedPage;
+                }
+                renderPagination(); // Перерисовываем пагинацию
+                loadDataForPage(currentPage); // Загрузка данных для страницы (эта функция должна быть реализована отдельно)
+            });
+
+            // Первая инициализация
+            renderPagination();
+        });
+
+    </script>
+</body>
+
+</html>

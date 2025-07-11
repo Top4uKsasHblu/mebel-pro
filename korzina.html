@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="icon" type="png" href="img/mdi_sofa.png">
+    <link rel="stylesheet" href="korzina.css">
+    <meta charset="utf-8" />
+    <script src="https://kit.fontawesome.com/3929e16ef5.js" crossorigin="anonymous"></script>
+    <script src="{% static 'network/functions.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>MEBEL PRO</title>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="pre-header">
+        <header>
+            <div class="wrap">
+                <a style="margin-top: 5px;" href="index.html">
+                    <img class="header-icon" src="img/logo.svg" alt="MEBEL PRO">
+                </a>
+                <div class="panel">
+                    <a href="index.html">
+                        в тренде
+                    </a>
+                    <a href="divan.html">
+                        Диваны
+                    </a>
+                    <a href="">
+                        Столы
+                    </a>
+                    <a href="">
+                        Стулья
+                    </a>
+                    <a href="">
+                        Кровати
+                    </a>
+                    <a href="">
+                        Уличная мебель
+                    </a>
+                    <a href="">
+                        Хранение
+                    </a>
+                </div>
+                <div class="header-end">
+                    <a href=""><img src="img/Vector.svg" alt=""></a>
+                    <a href=""><img src="img/Profile 1=Default.svg" alt=""></a>
+                    <a href="favorite.html"><img style="transform: scale(1.4);" src="img/favorite.svg" alt=""></a>
+                    <a href=""><img src="img/Property 1=Default.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="flyer" style="display: flex;align-items: center;color: rgba(50, 52, 51, 0.5);">
+                <p style="position: relative;margin-top:8px ;margin-bottom: 0px; left: 5%;"><a
+                        href="index.html">Главная</a><img src="img/fluent_ios-arrow-24-filled.png" alt="">
+                    <a href="korzina.html">Корзина</a>
+                </p>
+            </div>
+        </header>
+    </div>
+    <div class="content">
+        <div class="main">
+            <div style="display: flex;width: 100%;height: 100%;flex-direction: row;">
+                <div
+                    style="display: flex;width: 70%;border-top: 1px solid rgba(193, 175, 134, 0.5);flex-direction: column;">
+                    <h2>Корзина</h2>
+                    <div class="element1" style="display: flex;flex-direction: row;">
+                        <div style="display: flex;align-items: center;height: 200px;">
+                            <div style="display: flex;flex-direction: column;">
+                                <img style="width: 150px;height: 50px;" src="img/Rectangle 20.png" alt="">
+                                <div style="display: flex;flex-direction: row;justify-content: center;">
+                                    <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 1.png"
+                                        alt="">
+                                    <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 1.png"
+                                        alt="">
+                                    <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 1.png"
+                                        alt="">
+                                    <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 1.png"
+                                        alt="">
+                                    <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 5.png"
+                                        alt="">
+                                    <p style="margin: 0px;">(420)</p>
+                                </div>
+                            </div>
+                            <div style="display: flex;flex-direction: column;">
+                                <h3 style="margin-top: 4px; margin-bottom: 2px;">Диван-кровать Скаген бежевого цвета
+                                </h3>
+                                <p style="margin-top: 2px;margin-bottom: 2px;">Артикул: IMR-1798647</p>
+                                <div style="display: flex;flex-direction: row;">
+                                    <p
+                                        style="color: rgba(164, 91, 56, 1);border-right: 1px solid rgba(164, 91, 56, 1);padding-right: 4px;margin-right: 4px;">
+                                        Цвет</p>
+                                    <p
+                                        style="color: rgba(164, 91, 56, 1);border-right: 1px solid rgba(164, 91, 56, 1);padding-right: 4px;margin-right: 4px;">
+                                        Велюр</p>
+                                    <p style="color: rgba(164, 91, 56, 1)">235х90х155</p>
+                                </div>
+                                <div style="display: flex;flex-direction: row;">
+                                <div class="numba" style="display: flex;">
+                                    <button id="decrease">-</button>
+                                    <span id="number">1</span>
+                                    <button id="increase">+</button>
+                                </div>
+                                <div style="display: flex;">
+                                    <p id="result"></p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="crestik">
+                            <img style="width: 15px; height: 15px;" src="img/Crestik.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="element2" style="display: flex;flex-direction: row;">
+                        <div style="display: flex;align-items: center;height: 200px;">
+                            <div style="display: flex;flex-direction: column;">
+                                <img style="width: 150px;height: 50px;" src="img/Rectangle 20.png" alt="">
+                                <div style="display: flex;flex-direction: row;justify-content: center;">
+                                    <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 1.png"
+                                        alt="">
+                                    <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 1.png"
+                                        alt="">
+                                    <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 1.png"
+                                        alt="">
+                                    <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 1.png"
+                                        alt="">
+                                    <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 5.png"
+                                        alt="">
+                                    <p style="margin: 0px;">(420)</p>
+                                </div>
+                            </div>
+                            <div style="display: flex;flex-direction: column;">
+                                <h3 style="margin-top: 4px; margin-bottom: 2px;">Диван-кровать Скаген бежевого цвета
+                                </h3>
+                                <p style="margin-top: 2px;margin-bottom: 2px;">Артикул: IMR-1798647</p>
+                                <div style="display: flex;flex-direction: row;">
+                                    <p
+                                        style="color: rgba(164, 91, 56, 1);border-right: 1px solid rgba(164, 91, 56, 1);padding-right: 4px;margin-right: 4px;">
+                                        Цвет</p>
+                                    <p
+                                        style="color: rgba(164, 91, 56, 1);border-right: 1px solid rgba(164, 91, 56, 1);padding-right: 4px;margin-right: 4px;">
+                                        Велюр</p>
+                                    <p style="color: rgba(164, 91, 56, 1)">235х90х155</p>
+                                </div>
+                                <div class="numba2" style="display: flex;">
+                                    <button id="decrease2">-</button>
+                                    <span id="number2">0</span>
+                                    <button id="increase2">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="crestik2">
+                            <img style="width: 15px; height: 15px;" src="img/Crestik.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-conteiner">
+            <div class="footer-content">
+                <div style="display: flex;flex-direction: column; height: 100%;justify-content: space-evenly;">
+                    <a href=""><img style="filter: invert(1);" src="img/logo.svg" alt=""></a>
+                    <a href="index.html">В тренде</a>
+                    <a href="divan.html">Диваны</a>
+                    <a href="">Столы</a>
+                    <a href="">Стулья</a>
+                    <a href="">Кровати</a>
+                    <a href="">Хранение</a>
+                </div>
+                <div style="display: flex;flex-direction: column;height: 50%;;justify-content: space-evenly;">
+                    <h3 style="margin-bottom: 0px;">Доставка и оплата</h3>
+                    <a href="">Доставка</a>
+                    <a href="">Варианты оплаты</a>
+                </div>
+                <div style="display: flex;flex-direction: column; height: 100%;">
+                    <h3 style="margin-bottom: 2px;">Контакты</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8); margin-top: 2px ;margin-bottom: 2px;">9 87353
+                        3435
+                    </p>
+                    <a href="">gmail@gmail.com</a>
+                    <h3>Отдел продаж с 9.00 до 20.00</h3>
+                </div>
+                <div style="display: flex;flex-direction: column;height: 100%;">
+                    <h3 style="margin-bottom: 0px;">Подпишитесь на нас</h3>
+                    <div style="display: flex;flex-direction: column;">
+                        <p style="color: rgba(255, 255, 255, 1);margin-top: 2px;">Мы в социальных сетях</p>
+                        <div style="display: flex;flex-wrap: nowrap;">
+                            <a href=""><img style="width: 24px;height: 24px;" src="img/mdi_youtube.png" alt=""></a>
+                            <a href=""><img style="width: 24px;height: 24px;" src="img/basil_vk-solid.png" alt=""></a>
+                            <a href=""><img style="width: 24px;height: 24px;" src="img/ri_instagram-fill.png"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                    <h3 style="margin-bottom: 2px;">Платежные системы</h3>
+                    <div style="display: flex;flex-wrap: nowrap; justify-content: space-around;align-items: center;">
+                        <img style="width: 40px;height: 12px;" src="img/visa_payment_method_card_icon_142746.png"
+                            alt="">
+                        <img style="width: 40px;height: 12px;" src="img/Mir-01.png" alt="">
+                        <img style="width: 40px;height: 25px;" src="img/mastercard_old_payment_method_icon_142751.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="end-footer">
+                <div>
+                    <p style="color: rgba(255, 255, 255, 0.8);">©2025 Goratz. Все права защищены</p>
+                </div>
+                <div style="display: flex;flex-wrap:nowrap;">
+                    <p>
+                        <a style="border-right: 1px solid #fff;padding-right: 4px;" href="">Terms of use</a>
+                        <a style="border-right: 1px solid #fff;padding-right: 4px;" href="">Privacy Policy</a>
+                        <a href="">Cookie Settings</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            var numba = $('#number');
+
+            $('#decrease').click(function () {
+                let currentValue = parseInt(numba.text());
+                if (currentValue > 0) {
+                    numba.text(currentValue - 1);
+                }
+
+            });
+            $('#increase').click(function () {
+                let currentValue = parseInt(numba.text());
+                numba.text(currentValue + 1);
+            });
+        });
+        $(document).ready(function () {
+            var numba2 = $('#number2');
+
+            $('#decrease2').click(function () {
+                let currentValue = parseInt(numba2.text());
+                if (currentValue > 0) {
+                    numba2.text(currentValue - 1);
+                }
+
+            });
+            $('#increase2').click(function () {
+                let currentValue = parseInt(numba2.text());
+                numba2.text(currentValue + 1);
+            });
+        });
+        $(document).ready(function(){
+            $('.crestik2').click(function(){
+                $('.element1').remove();
+            });
+        });
+        $(document).ready(function(){
+            $('.crestik2').click(function(){
+                $('.element2').remove();
+            });
+        });
+        $(document).ready(function(){
+            let number = Number($('#number').text());
+            var stoimost = 25000;
+            var result = number * stoimost;
+            $('#result').text(result)
+
+        })
+    </script>
+
+</body>
+
+</html>

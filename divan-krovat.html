@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="icon" type="png" href="img/mdi_sofa.png">
+    <link rel="stylesheet" href="divan-krovat.css">
+    <meta charset="utf-8" />
+    <script src="https://kit.fontawesome.com/3929e16ef5.js" crossorigin="anonymous"></script>
+    <script src="{% static 'network/functions.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>MEBEL PRO</title>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="pre-header">
+        <header>
+            <div class="wrap">
+                <a style="margin-top: 5px;" href="index.html">
+                    <img class="header-icon" src="img/logo.svg" alt="MEBEL PRO">
+                </a>
+                <div class="panel">
+                    <a href="index.html">
+                        в тренде
+                    </a>
+                    <a href="divan.html">
+                        Диваны
+                    </a>
+                    <a href="">
+                        Столы
+                    </a>
+                    <a href="">
+                        Стулья
+                    </a>
+                    <a href="">
+                        Кровати
+                    </a>
+                    <a href="">
+                        Уличная мебель
+                    </a>
+                    <a href="">
+                        Хранение
+                    </a>
+                </div>
+                <div class="header-end">
+                    <a href=""><img src="img/Vector.svg" alt=""></a>
+                    <a href=""><img src="img/Profile 1=Default.svg" alt=""></a>
+                    <a href="favorite.html"><img style="transform: scale(1.4);" src="img/favorite.svg" alt=""></a>
+                    <a href=""><img src="img/Property 1=Default.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="flyer" style="display: flex;align-items: center;color: rgba(50, 52, 51, 0.5);">
+                <p style="position: relative;margin-top:8px ;margin-bottom: 0px; left: 5%;"><a
+                        href="index.html">Главная</a><img src="img/fluent_ios-arrow-24-filled.png" alt="">
+                    <a href="divan.html">Диваны</a><img src="img/fluent_ios-arrow-24-filled.png" alt="">
+                    <a href="divan.html">Все диваны</a><img src="img/fluent_ios-arrow-24-filled.png" alt="">
+                    <a href="divan-krovat.html">Диван-кровать Скаген бежевого цвета</a>
+                </p>
+            </div>
+        </header>
+    </div>
+    <div class="content">
+        <div class="main">
+            <div style="display: flex;flex-direction: row;width: 100%;height: 100%;margin-bottom: 60px;">
+                <div class="thumbnails" style="display: flex;width: 5%;flex-direction: column;">
+                    <img style="width: 50px; height: 50px; margin-bottom:2px ;"
+                        src="img/aa99c707121989c1076b662761a0c157.jpg" alt=""
+                        data-src="img/aa99c707121989c1076b662761a0c157.jpg">
+                    <img style="width: 50px; height: 50px; margin-bottom:2px ;"
+                        src="img/7ec1f5eb5f91d5633ba32fea891a0a0c.jpg" alt=""
+                        data-src="img/7ec1f5eb5f91d5633ba32fea891a0a0c.jpg">
+                    <img style="width: 50px; height: 50px; margin-bottom:2px ;"
+                        src="img/aa99c707121989c1076b662761a0c157.jpg" alt=""
+                        data-src="img/aa99c707121989c1076b662761a0c157.jpg">
+                    <img style="width: 50px; height: 50px; margin-bottom:2px ;"
+                        src="img/7ec1f5eb5f91d5633ba32fea891a0a0c.jpg" alt=""
+                        data-src="img/7ec1f5eb5f91d5633ba32fea891a0a0c.jpg">
+                    <img style="width: 50px; height: 50px; margin-bottom:2px ;"
+                        src="img/aa99c707121989c1076b662761a0c157.jpg" alt=""
+                        data-src="img/aa99c707121989c1076b662761a0c157.jpg">
+                    <img style="width: 50px; height: 50px; margin-bottom:2px ;"
+                        src="img/7ec1f5eb5f91d5633ba32fea891a0a0c.jpg" alt=""
+                        data-src="img/7ec1f5eb5f91d5633ba32fea891a0a0c.jpg">
+                </div>
+                <div style="display: flex;width: 50%;height: 100%;">
+                    <div class="main-image" style="display: flex;width: 100%;height: 500px">
+                        <img id="activeImage" src="img/aa99c707121989c1076b662761a0c157.jpg" alt="">
+                    </div>
+                </div>
+                <div style="display: flex;padding: 15px; width: 35%;flex-direction: column;">
+                    <div style="display: flex;">
+                        <h2>Диван-кровать Скаген бежевого цвета</h2>
+                    </div>
+                    <div style="display: flex;flex-direction: row;">
+                        <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 1.png" alt="">
+                        <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 1.png" alt="">
+                        <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 1.png" alt="">
+                        <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 1.png" alt="">
+                        <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 5.png" alt="">
+                        <p style="margin: 0; color: var(--main-color);">420 отзывов</p>
+                    </div>
+                    <div style="display: flex;">
+                        <p style="color: var(--main-color);">Артикул: IMR-1798647</p>
+                    </div>
+                    <div style="display: flex;flex-direction: row;align-items: center;">
+                        <h2 style="margin: 0px; color: var(--main-color);">25000 </h2>
+                        <img style="width: 32px; height: 32px;" src="img/carbon_currency-ruble.svg" alt="">
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <div style="display: flex;flex-direction: row;">
+                            <p><span>Цвет:</span></p>
+                            <p id="text">Бежевый</p>
+                        </div>
+                        <div class="change-color" style="display: flex;flex-direction: row;">
+                            <nav class="border-for-color" id="color1"
+                                style="background-color: rgba(214, 197, 182, 1);width: 40px;height: 40px;border-radius:50%;margin-right: 2px;">
+                            </nav>
+                            <nav id="color2"
+                                style="background-color: rgba(159, 125, 91, 1);width: 40px;height: 40px;border-radius:50%;margin-right: 2px;">
+                            </nav>
+                            <nav id="color3"
+                                style="background-color: rgba(91, 123, 159, 1);width: 40px;height: 40px;border-radius:50%;margin-right: 2px;">
+                            </nav>
+                            <nav id="color4"
+                                style="background-color: rgba(68, 68, 68, 1);width: 40px;height: 40px;border-radius:50%;margin-right: 2px;">
+                            </nav>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="display: flex;flex-direction: row;">
+                            <p><span>Размеры(ШхВхГ):</span></p>
+                            <p id="text2">235x90x135</p>
+                        </div>
+                        <div class="sizes" style="display: flex;flex-direction: row;">
+                            <nav id="size1" class="sizes-border" style="margin-right: 4px;padding: 5px">235x90x135</nav>
+                            <nav id="size2" class="sizes-border" style=";margin-right: 4px;padding: 5px">245x90x135
+                            </nav>
+                            <nav id="size3" class="sizes-border" style=";margin-right: 4px;padding: 5px">255x90x135
+                            </nav>
+                        </div>
+                    </div>
+                    <div style="display: flex;">
+                        <p style="color:rgba(159, 125, 91, 1);margin-top: 2px;margin-bottom: 2px;">Сроки изготовлеение:
+                            от 60 дней</p>
+                    </div>
+                    <div style="display: flex;">
+                        <p style="margin-top: 2px;margin-bottom: 2px;"><span>Вес:</span> 80кг</p>
+                    </div>
+                    <div style="display: flex;">
+                        <p style="margin-top: 2px;margin-bottom: 2px;"><span>Материал:</span> Велюр</p>
+                    </div>
+                    <div style="display: flex;">
+                        <p style="margin-top: 2px;margin-bottom: 2px;"><span>Доставка:</span> Доставка в город , по
+                            России и в СНГ</p>
+                    </div>
+                    <div style="display: flex;flex-direction: row;">
+                        <button class="button-small"
+                            style="justify-content: space-between;flex-direction: row;display: flex; align-items: center;width: 50%;margin-right: 5px;">
+                            <p style="margin-bottom: 8px; margin-top: 8px;color: rgba(193, 162, 134, 1);">В корзину</p>
+                            <img style="width: 30px; height: auto;filter: invert(1);" src="img/Arrow 2.png" alt="">
+                        </button>
+                        <div class="icons">
+                            <i id="heart" class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex;position: relative;width: 50%;flex-direction: column;">
+                <h2>Информация о товаре</h2>
+                <p>Мягкая кровать-тахта Milena (Милена) с ортопедическим основанием, выкатными ящиками и спальным местом
+                    120*200 – уникальный предмет мебели, который совмещает в себе полноценную кровать и диван.
+                    Тахта с двумя мягкими спинками выполнена из модной мебельной ткани – велюр Фортуна 11, серого цвета.
+                    Ткань износостойкая, легко чистится от загрязнений (влажной тряпочкой, любыми средствами, кроме
+                    средств с растворителями), практичная, эластичная, устойчивая к ультрафиолету.
+                    <li> Угол сборки универсальный – может собираться как на правую, так и на левую сторону.</li>
+                    <li> Укомплектована основанием - ортопедическими ламелями на металлической рамке.</li>
+                    <li> Спальное место – 120*200 см.</li>
+                    <li> Кровать укомплектована двумя выкатными ящиками (полного выдвижения)</li>
+                    <li> Высокие стенки обшиты сзади спанбондом.</li>
+                    Рекомендуем размещать кровать к стене. Эксплуатация кровати без матраса – ЗАПРЕЩАЕТСЯ (т.к.
+                    ортопедические ламели и/или подъемный механизм предназначены для равномерного распределения веса
+                    только с матрасом) · Нагрузка на одно спальное место 125 кг. · Рекомендуемый вес матраса - не более
+                    27 кг. · Рекомендуемая высота матраса – не более 20 см. · ВАЖНО! В случае, если матрас подобран
+                    неправильно (более тяжелый или высокий), он может повредить механизм кровати. Это не является
+                    гарантийным случаем для замены кровати.
+                    Кровать Milena поставляется в разобранном виде. Требует дополнительное сборки. Паспорт сборки в
+                    комплекте.
+                    Цена кровати Milena указана без стоимости матраса. Декоративные подушки в стоимость не входят и
+                    являются только украшением при визуализации кровати. Экран мобильных устройств и монитора компьютера
+                    не всегда могут корректно на 100% передать цвет окончательного изделия.
+                    Мебельная ткань “велюр” очень часто играет при свете – меняя оттенок от темного до более светлого.
+                    Поэтому возможны незначительные цветовые отличия при получении модели.
+                    Гарантия 24 месяца.
+                </p>
+            </div>
+            <div style="display: flex;flex-direction: column;">
+                <div style="display: flex;flex-direction: row;justify-content: space-between;align-items: center;">
+                    <div style="display: flex;flex-direction: column;">
+                        <h2 style="margin-top: 8px;margin-bottom: 8px;">Отзывы</h2>
+                        <div style="display: flex;flex-direction: row;">
+                            <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 1.png" alt="">
+                            <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 1.png" alt="">
+                            <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 1.png" alt="">
+                            <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 1.png" alt="">
+                            <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 5.png" alt="">
+                            <p style="margin: 0; color: var(--main-color);">420 отзывов</p>
+                        </div>
+                    </div>
+                    <div style="display: flex;flex-wrap: nowrap;">
+                        <p style="color: rgba(50, 52, 51, 1);">Сортировать по:</p>
+                        <select name="sort by" id="sort">
+                            <option value="recomend1">Рекомендации</option>
+                            <option value="recomend2">Рекомендации</option>
+                            <option value="recomend3">Рекомендации</option>
+                            <option value="recomend4">Рекомендации</option>
+                        </select>
+                    </div>
+                </div>
+                <div style="display: flex;flex-direction: row;width: 100%;margin-bottom: 60px;">
+                    <div style="display: flex;flex-direction: column;width: 20%;">
+                        <h4 style="margin-bottom: 4px;">Максим Б.</h4>
+                        <div style="display: flex;flex-direction: row;">
+                            <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 1.png" alt="">
+                            <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 1.png" alt="">
+                            <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 1.png" alt="">
+                            <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 1.png" alt="">
+                            <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 5.png" alt="">
+                        </div>
+                        <p style="color: var(--main-color);">Москва</p>
+                    </div>
+                    <div style="display: flex;width: 60%;flex-direction: column;">
+                        <h4 style="margin-bottom: 4px;">Роскошно и так уютно!</h4>
+                        <p style="color: var(--main-color);">Мы с женой некоторое время искали идеальную замену дивану
+                            для телевизора и хотели обновить наш невероятно неудобный диван в Ikea. Секционный оуэн
+                            соответствовал всем требованиям - глубокие сиденья, уютные и современный стиль середины
+                            века. Жемчужно-бежевый fabrix великолепен и выглядит как ткань «птичий глаз» с насыщенной
+                            кремовой и черной текстурой. Сборка заняла немного времени, но конструкция очень прочная и
+                            хорошо сделана. Мы очень рады и обязательно сядем в кресло в свое время.</p>
+                        <dIv style="display: flex;flex-direction: row;">
+                            <img style="height: 105px;height: 105;object-fit: contain;margin-right: 10px;"
+                                src="img/aa99c707121989c1076b662761a0c157.jpg" alt="">
+                            <img style="height: 105px;height: 105;object-fit: contain;"
+                                src="img/aa99c707121989c1076b662761a0c157.jpg" alt="">
+                        </dIv>
+                    </div>
+                    <div style="display: flex;justify-content: center;width: 20%;">
+                        <p style="color: var(--main-color);">02, март 2025</p>
+                    </div>
+                </div>
+                <div style="display: flex;flex-direction: row;width: 100%;margin-bottom: 60px;">
+                    <div style="display: flex;flex-direction: column;width: 20%;">
+                        <h4 style="margin-bottom: 4px;">Максим Б.</h4>
+                        <div style="display: flex;flex-direction: row;">
+                            <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 1.png" alt="">
+                            <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 1.png" alt="">
+                            <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 1.png" alt="">
+                            <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 1.png" alt="">
+                            <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 5.png" alt="">
+                        </div>
+                        <p style="color: var(--main-color);">Москва</p>
+                    </div>
+                    <div style="display: flex;width: 60%;flex-direction: column;">
+                        <h4 style="margin-bottom: 4px;">Роскошно и так уютно!</h4>
+                        <p style="color: var(--main-color);">Мы с женой некоторое время искали идеальную замену дивану
+                            для телевизора и хотели обновить наш невероятно неудобный диван в Ikea. Секционный оуэн
+                            соответствовал всем требованиям - глубокие сиденья, уютные и современный стиль середины
+                            века. Жемчужно-бежевый fabrix великолепен и выглядит как ткань «птичий глаз» с насыщенной
+                            кремовой и черной текстурой. Сборка заняла немного времени, но конструкция очень прочная и
+                            хорошо сделана. Мы очень рады и обязательно сядем в кресло в свое время.</p>
+                        <dIv style="display: flex;flex-direction: row;">
+                            <img style="height: 105px;height: 105;object-fit: contain;margin-right: 10px;"
+                                src="img/aa99c707121989c1076b662761a0c157.jpg" alt="">
+                            <img style="height: 105px;height: 105;object-fit: contain;"
+                                src="img/aa99c707121989c1076b662761a0c157.jpg" alt="">
+                        </dIv>
+                    </div>
+                    <div style="display: flex;justify-content: center;width: 20%;">
+                        <p style="color: var(--main-color);">02, март 2025</p>
+                    </div>
+                </div>
+                <div style="display: flex;flex-direction: row;width: 100%;margin-bottom: 60px;">
+                    <div style="display: flex;flex-direction: column;width: 20%;">
+                        <h4 style="margin-bottom: 4px;">Максим Б.</h4>
+                        <div style="display: flex;flex-direction: row;">
+                            <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 1.png" alt="">
+                            <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 1.png" alt="">
+                            <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 1.png" alt="">
+                            <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 1.png" alt="">
+                            <img style="width: 15px;height: 15px;margin-right: 2px;" src="img/Star 5.png" alt="">
+                        </div>
+                        <p style="color: var(--main-color);">Москва</p>
+                    </div>
+                    <div style="display: flex;width: 60%;flex-direction: column;">
+                        <h4 style="margin-bottom: 4px;">Роскошно и так уютно!</h4>
+                        <p style="color: var(--main-color);">Мы с женой некоторое время искали идеальную замену дивану
+                            для телевизора и хотели обновить наш невероятно неудобный диван в Ikea. Секционный оуэн
+                            соответствовал всем требованиям - глубокие сиденья, уютные и современный стиль середины
+                            века. Жемчужно-бежевый fabrix великолепен и выглядит как ткань «птичий глаз» с насыщенной
+                            кремовой и черной текстурой. Сборка заняла немного времени, но конструкция очень прочная и
+                            хорошо сделана. Мы очень рады и обязательно сядем в кресло в свое время.</p>
+                        <dIv style="display: flex;flex-direction: row;">
+                            <img style="height: 105px;height: 105;object-fit: contain;margin-right: 10px;"
+                                src="img/aa99c707121989c1076b662761a0c157.jpg" alt="">
+                            <img style="height: 105px;height: 105;object-fit: contain;"
+                                src="img/aa99c707121989c1076b662761a0c157.jpg" alt="">
+                        </dIv>
+                    </div>
+                    <div style="display: flex;justify-content: center;width: 20%;">
+                        <p style="color: var(--main-color);">02, март 2025</p>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex;width: 100%;justify-content: center;">
+                <nav>
+                    <ul id="pagination" class="pagination pagination-lg">
+                        <!-- Кнопки будут вставлены динамически с помощью jQuery -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-conteiner">
+            <div class="footer-content">
+                <div style="display: flex;flex-direction: column; height: 100%;justify-content: space-evenly;">
+                    <a href=""><img style="filter: invert(1);" src="img/logo.svg" alt=""></a>
+                    <a href="index.html">В тренде</a>
+                    <a href="divan.html">Диваны</a>
+                    <a href="">Столы</a>
+                    <a href="">Стулья</a>
+                    <a href="">Кровати</a>
+                    <a href="">Хранение</a>
+                </div>
+                <div style="display: flex;flex-direction: column;height: 50%;;justify-content: space-evenly;">
+                    <h3 style="margin-bottom: 0px;">Доставка и оплата</h3>
+                    <a href="">Доставка</a>
+                    <a href="">Варианты оплаты</a>
+                </div>
+                <div style="display: flex;flex-direction: column; height: 100%;">
+                    <h3 style="margin-bottom: 2px;">Контакты</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8); margin-top: 2px ;margin-bottom: 2px;">9 87353
+                        3435
+                    </p>
+                    <a href="">gmail@gmail.com</a>
+                    <h3>Отдел продаж с 9.00 до 20.00</h3>
+                </div>
+                <div style="display: flex;flex-direction: column;height: 100%;">
+                    <h3 style="margin-bottom: 0px;">Подпишитесь на нас</h3>
+                    <div style="display: flex;flex-direction: column;">
+                        <p style="color: rgba(255, 255, 255, 1);margin-top: 2px;">Мы в социальных сетях</p>
+                        <div style="display: flex;flex-wrap: nowrap;">
+                            <a href=""><img style="width: 24px;height: 24px;" src="img/mdi_youtube.png" alt=""></a>
+                            <a href=""><img style="width: 24px;height: 24px;" src="img/basil_vk-solid.png" alt=""></a>
+                            <a href=""><img style="width: 24px;height: 24px;" src="img/ri_instagram-fill.png"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                    <h3 style="margin-bottom: 2px;">Платежные системы</h3>
+                    <div style="display: flex;flex-wrap: nowrap; justify-content: space-around;align-items: center;">
+                        <img style="width: 40px;height: 12px;" src="img/visa_payment_method_card_icon_142746.png"
+                            alt="">
+                        <img style="width: 40px;height: 12px;" src="img/Mir-01.png" alt="">
+                        <img style="width: 40px;height: 25px;" src="img/mastercard_old_payment_method_icon_142751.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="end-footer">
+                <div>
+                    <p style="color: rgba(255, 255, 255, 0.8);">©2025 Goratz. Все права защищены</p>
+                </div>
+                <div style="display: flex;flex-wrap:nowrap;">
+                    <p>
+                        <a style="border-right: 1px solid #fff;padding-right: 4px;" href="">Terms of use</a>
+                        <a style="border-right: 1px solid #fff;padding-right: 4px;" href="">Privacy Policy</a>
+                        <a href="">Cookie Settings</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            // Обработчик клика на миниатюрах
+            $('.thumbnails img').click(function () {
+                var newSrc = $(this).data('src'); // Получаем путь к большому изображению
+                $('#activeImage').attr('src', newSrc); // Меняем источник основного изображения
+            });
+        });
+        $(document).ready(function () {
+            $('.thumbnails img').click(function () {
+                var newSrc = $(this).data('src'); // Получаем путь к большому изображению
+
+                // Удаляем активный класс со всех миниатюр
+                $('.thumbnails img').removeClass('active-thumbnail');
+
+                // Добавляем активный класс к текущей миниатюре
+                $(this).addClass('active-thumbnail');
+
+                // Меняем источник основного изображения
+                $('#activeImage').attr('src', newSrc);
+            });
+        });
+        $(document).ready(function () {
+            $('#color1').click(function () {
+                $('#text').text('Бежевый');
+                $('.change-color nav').removeClass('border-for-color');
+                $(this).addClass('border-for-color');
+            });
+        });
+        $(document).ready(function () {
+            $('#color2').click(function () {
+                $('#text').text('Коричневый');
+                $('.change-color nav').removeClass('border-for-color');
+                $(this).addClass('border-for-color');
+            });
+        });
+        $(document).ready(function () {
+            $('#color3').click(function () {
+                $('#text').text('Синий');
+                $('.change-color nav').removeClass('border-for-color');
+                $(this).addClass('border-for-color');
+            });
+        });
+        $(document).ready(function () {
+            $('#color4').click(function () {
+                $('#text').text('Серый');
+                $('.change-color nav').removeClass('border-for-color');
+                $(this).addClass('border-for-color');
+            });
+        });
+        $(document).ready(function () {
+            $('#size1').click(function () {
+                $('#text2').text('235x90x135');
+                $('.sizes nav').removeClass('sizes-border-active');
+                $('.sizes nav').addClass('sizes-border')
+                $(this).toggleClass('sizes-border-active');
+            });
+        });
+        $(document).ready(function () {
+            $('#size2').click(function () {
+                $('#text2').text('245x90x135');
+                $('.sizes nav').removeClass('sizes-border-active');
+                $('.sizes nav').addClass('sizes-border')
+                $(this).toggleClass('sizes-border-active');
+            });
+        });
+        $(document).ready(function () {
+            $('#size3').click(function () {
+                $('#text2').text('255x90x135');
+                $('.sizes nav').removeClass('sizes-border-active');
+                $('.sizes nav').addClass('sizes-border')
+                $(this).toggleClass('sizes-border-active');
+            });
+        });
+        $(document).ready(function () {
+            $("#heart").click(function () {
+                $(this).toggleClass('fas fa-heart');
+                $(this).toggleClass('far fa-heart');
+            });
+        });
+        $(document).ready(function () {
+            var currentPage = 1; // Текущая активная страница
+            var totalPages = 5; // Всего страниц (пример значения)
+
+            function renderPagination() {
+                $('#pagination').empty(); // очищаем список кнопок
+
+                // Создаем элементы для предыдущей страницы ("Назад")
+                if (currentPage > 1) {
+                    $('#pagination').append('<li class="page-item"><a class="page-link" href="#">Назад</a></li>');
+                }
+
+                // Генерируем нумерованные кнопки страниц
+                for (var i = 1; i <= totalPages; i++) {
+                    var isActive = (i === currentPage) ? 'active' : '';
+                    $('#pagination').append(
+                        '<li class="page-item ' + isActive + '" data-page="' + i + '">' +
+                        '<a class="page-link" href="#">' + i + '</a>' +
+                        '</li>'
+                    );
+                }
+
+                // Создаем элементы для следующей страницы ("Вперед")
+                if (currentPage < totalPages) {
+                    $('#pagination').append('<li class="page-item"><a class="page-link" href="#">Вперед</a></li>');
+                }
+            }
+
+            // Обработчик кликов по пунктам пагинации
+            $(document).on('click', '.page-item a', function (e) {
+                e.preventDefault();
+                var clickedPage = $(this).parent().data('page'); // Получаем выбранную страницу
+                if ($(this).text() === 'Назад') {
+                    currentPage--;
+                } else if ($(this).text() === 'Вперед') {
+                    currentPage++;
+                } else {
+                    currentPage = clickedPage;
+                }
+                renderPagination(); // Перерисовываем пагинацию
+                loadDataForPage(currentPage); // Загрузка данных для страницы (эта функция должна быть реализована отдельно)
+            });
+
+            // Первая инициализация
+            renderPagination();
+        });
+    </script>
+
+</body>
+
+</html>
